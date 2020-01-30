@@ -3,27 +3,18 @@
 = GRETL-Jobs - Manuelle Datenuploads: Benutzerhandbuch 
 :toc: right
 :toc-title: Inhaltsverzeichnis 
-:imagesdir: src/docs/asciidoc/theme/images
+:imagesdir: src/docs/asciidoc/images
 :author_name: Amt für Geoinformation Kanton Solothurn
 :author_email: agi@bd.so.ch
 :author: {author_name}
 :email: {author_email}
-//:revnumber: {project-version}
 :title-page:
 :sectnums:
 :chapter-label: 
 :revdate: {docdate}
 
-include::src/docs/asciidoc/chapter/einleitung.adoc[]
+== Einleitung
 
-//include::chapter/modelltypen.adoc[]
+GRETL-Jenkins ist die zentrale GDI-Komponenten, um Daten zu importieren, exportieren und Daten umzubauen und von einer Datenbank in eine andere zu kopieren. Es besteht die Anforderung, dass Daten manuell («on-demand») in eine Datenbank des AGI importiert werden können. 
 
-//include::chapter/modellierungsprozess.adoc[]
-
-//include::chapter/modelldokumentation-und-ablage.adoc[]
-
-//include::chapter/werkzeuge.adoc[]
-
-//include::chapter/modellierungsregeln.adoc[]
-
-//include::chapter/historisierung.adoc[]
+im prinzip ist funktionalität vorhanden aber nicht für pipeline-jobs nur _freestyle_.
