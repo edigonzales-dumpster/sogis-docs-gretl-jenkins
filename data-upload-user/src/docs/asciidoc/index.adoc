@@ -12,6 +12,7 @@
 :title-page:
 :sectnums:
 :chapter-label: 
+:revdate: {docdate}
 
 include::src/docs/asciidoc/chapter/einleitung.adoc[]
 

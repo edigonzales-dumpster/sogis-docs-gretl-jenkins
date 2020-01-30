@@ -1,0 +1,33 @@
+asciidoctor {
+  sourceDir  file('src/docs/asciidoc')
+  outputDir  file('build/docs')
+}
+
+asciidoctorj {  // or asciidoctor.asciidoctorj
+   attributes revnumber : project.version
+   //options doctype: 'book', ruby: 'erubis'
+}
+
+/*
+pdfThemes {
+    local 'custom', { 
+        themeDir = file('src/docs/asciidoc/theme') 
+        themeName = 'custom' 
+    }
+}
+*/
+
+pdfThemes {
+    github 'sogis-basic', { 
+        organisation = 'edigonzales' 
+        repository = 'sogis-docs-asciidoctor-themes' 
+        relativePath = 'sogis-basic' 
+        branch = 'master' 
+    }
+}
+
+asciidoctorPdf {
+    theme 'sogis-basic'
+    // not posssible with github theme
+    //fontsDir file('src/docs/asciidoc/theme')
+}
