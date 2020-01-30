@@ -13,6 +13,20 @@
 
 == Einleitung
 
-GRETL-Jenkins ist die zentrale GDI-Komponenten, um Daten zu importieren, exportieren und Daten umzubauen und von einer Datenbank in eine andere zu kopieren. Es besteht die Anforderung, dass Daten manuell («on-demand») in eine Datenbank des AGI importiert werden können. 
+GRETL-Jenkins ist die zentrale GDI-Komponente, um Daten zu importieren, exportieren und Daten umzubauen und von einer Datenbank in eine andere zu kopieren. Es besteht die Anforderung, dass Daten manuell («on-demand») in eine Datenbank des AGI importiert werden können. Jenkins bietet die Möglichkeit via GUI eine Datei hochzuladen an. Der GRETL-Job kann anschliessend auf diese Datei zugreifen. Leider funktioniert diese Möglichkeit nur bei sogeannten _Freestyle_-Jobs und nicht bei den von uns eingesetzten _Pipeline_-Jobs.
+
+Die vom AGI umgesetzte Lösungsvariante entkoppelt den Uploadschritt vom Ausführen des GRETL-Jobs. D.h. es müssen zwei Aktionen vom Benutzer ausgelöst werden. 
+
+== Daten hochladen
+
+Die Daten werden via Web-GUI in einen für das jeweilige Amt vordefinierten Ordner (z.B. `ch.so.agi.upload`) hochgeladen. Der Link zum Upload-GUI ist im GRELT-Job als Beschreibung hinterlegt (TODO...).
+
 
 im prinzip ist funktionalität vorhanden aber nicht für pipeline-jobs nur _freestyle_.
+
+
+== Weitere Hinweise
+
+öffentlich 
+missbrauch
+
