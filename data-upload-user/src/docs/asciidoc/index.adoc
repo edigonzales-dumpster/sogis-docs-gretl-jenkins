@@ -1,5 +1,3 @@
-// header file for HHGDAC AsciiDoc CheatSheet
-//
 = GRETL-Jobs - Manuelle Datenuploads: Benutzerhandbuch 
 :toc: right
 :toc-title: Inhaltsverzeichnis 
