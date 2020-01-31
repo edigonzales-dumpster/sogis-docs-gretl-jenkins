@@ -10,6 +10,7 @@
 :sectnums:
 :chapter-label: 
 :revdate: {docdate}
+:figure-caption: Abbildung
 
 == Einleitung
 
@@ -19,8 +20,14 @@ Die vom AGI umgesetzte Lösungsvariante entkoppelt den Uploadschritt vom Ausfüh
 
 == Daten hochladen
 
-Die Daten werden via Web-GUI in einen für das jeweilige Amt vordefinierten Ordner (z.B. `ch.so.agi.upload`) hochgeladen. Der Link zum Upload-GUI ist im GRELT-Job als Beschreibung hinterlegt (TODO...).
+Die Dateien werden via Web-GUI in einen für das jeweilige Amt vordefinierten Ordner (z.B. `ch.so.agi.upload`) hochgeladen. Der Link zum Upload-GUI ist im GRETL-Job als Beschreibung hinterlegt (TODO...).
 
+.Upload-GUI
+[#img-sunset]
+image::upload_01.png[Sunset,300,200]
+
+
+rechte nur für amts-ordner
 
 im prinzip ist funktionalität vorhanden aber nicht für pipeline-jobs nur _freestyle_.
 
