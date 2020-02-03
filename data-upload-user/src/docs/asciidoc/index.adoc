@@ -1,7 +1,7 @@
 = GRETL-Jobs - Manuelle Datenuploads: Benutzerhandbuch 
 :toc: right
 :toc-title: Inhaltsverzeichnis 
-:imagesdir: src/docs/asciidoc/images
+//:imagesdir: images
 :author_name: Amt für Geoinformation Kanton Solothurn
 :author_email: agi@bd.so.ch
 :author: {author_name}
@@ -14,17 +14,35 @@
 
 == Einleitung
 
-GRETL-Jenkins ist die zentrale GDI-Komponente, um Daten zu importieren, exportieren und Daten umzubauen und von einer Datenbank in eine andere zu kopieren. Es besteht die Anforderung, dass Daten manuell («on-demand») in eine Datenbank des AGI importiert werden können. Jenkins bietet die Möglichkeit via GUI eine Datei hochzuladen an. Der GRETL-Job kann anschliessend auf diese Datei zugreifen. Leider funktioniert diese Möglichkeit nur bei sogeannten _Freestyle_-Jobs und nicht bei den von uns eingesetzten _Pipeline_-Jobs.
+GRETL-Jenkins ist die zentrale GDI-Komponente, um Daten zu importieren, exportieren und Daten umzubauen und von einer Datenbank in eine andere zu kopieren. Es besteht die Anforderung, dass Daten manuell («on-demand») in eine Datenbank des AGI importiert werden können. Jenkins bietet die Möglichkeit via GUI eine Datei hochzuladen an. Der GRETL-Job kann anschliessend auf diese Datei zugreifen. Leider funktioniert diese Möglichkeit nur bei sogenannten _Freestyle_-Jobs und nicht bei den von uns eingesetzten _Pipeline_-Jobs.
 
 Die vom AGI umgesetzte Lösungsvariante entkoppelt den Uploadschritt vom Ausführen des GRETL-Jobs. D.h. es müssen zwei Aktionen vom Benutzer ausgelöst werden. 
 
 == Daten hochladen
 
-Die Dateien werden via Web-GUI in einen für das jeweilige Amt vordefinierten Ordner (z.B. `ch.so.agi.upload`) hochgeladen. Der Link zum Upload-GUI ist im GRETL-Job als Beschreibung hinterlegt (TODO...).
+Die Dateien werden via Upload-GUI in einen für das jeweilige Amt vordefinierten Ordner (z.B. `ch.so.agi.upload`) hochgeladen. Der Link zum Upload-GUI ist im GRETL-Job als Beschreibung hinterlegt (**FIXME: Originalscreenshot**):
+
+.GRETL-Job mit Uploadlink
+image::gretl_01.png[GRETL-Job mit Uploadlink]
+
+Der Link muss kopiert und in einem neuen Browserfenster oder -tab eingefügt werden. Er führt zum eigentlichen Upload-GUI. Falls sie noch nicht eingeloggt sind, müssen sie sich mit der Account-ID, dem Benutzernamen und dem Passwort einloggen:
+
+.Login-Fenster
+image::login_01.png[Login-Fenster]
+
+
+Nach dem Einloggen erscheint der Ordner in den sie die Daten hochladen können.
+
+.Upload-Ordner
+image::upload_01.png[Upload-Ordner]
+
+Nach einem Klicken auf den Upload-Button erscheint das eigentliche Upload-Fenster:
 
 .Upload-GUI
-[#img-sunset]
-image::upload_01.png[Sunset,300,200]
+image::upload_02.png[Upload-GUI]
+
+
+
 
 
 rechte nur für amts-ordner

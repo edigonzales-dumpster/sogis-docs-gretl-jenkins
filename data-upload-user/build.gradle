@@ -1,21 +1,16 @@
 asciidoctor {
-  sourceDir  file('src/docs/asciidoc')
-  outputDir  file('build/docs')
+    sourceDir  file('src/docs/asciidoc')
+    outputDir  file('build/docs')
+
+
 }
 
 asciidoctorj {  // or asciidoctor.asciidoctorj
-   attributes revnumber : project.version
+    attributes \
+        revnumber : project.version,
+        imagesdir : "images"
    //options doctype: 'book', ruby: 'erubis'
 }
-
-/*
-pdfThemes {
-    local 'custom', { 
-        themeDir = file('src/docs/asciidoc/theme') 
-        themeName = 'custom' 
-    }
-}
-*/
 
 pdfThemes {
     github 'sogis-basic', { 
@@ -27,6 +22,8 @@ pdfThemes {
 }
 
 asciidoctorPdf {
+    attributes \
+        imagesdir : "src/docs/asciidoc/images"
     theme 'sogis-basic'
     // not posssible with github theme
     //fontsDir file('src/docs/asciidoc/theme')
